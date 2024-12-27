@@ -1,0 +1,80 @@
+%
+% Title: Opposition of degree project
+% Template version: Don't forget to update when updating the template.
+% Update also the Word template. Keep the version numbers in both formats in sync.
+\newcommand{\theVersion}{2.3 -- February 4, 2021}
+%
+\documentclass[12pt,a4paper,twoside]{article}
+\usepackage{times}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+% --------------------------------------------
+% package "todonotes" is used for notes and comments
+% To disable all notes you can use the option "disable", see second row below:
+\usepackage[color=blue!10,textsize=footnotesize,textwidth=25mm]{todonotes}
+%\usepackage[disable]{todonotes} %passive=do not show
+% --------------------------------------------
+\usepackage[sort&compress]{natbib}
+\setcitestyle{numbers,square,comma}
+\usepackage{enumitem}
+\setlist{topsep=1ex,itemsep=0.5ex,parsep=0pt,partopsep=0pt}  % this sets the vertical spacing between list items and surrounding paragraphs
+\setlength{\bibsep}{4pt}
+
+% Please change the course name, if necessary.
+\newcommand{\theCourse}{TE2502: Examensarbete för civilingenjörer}
+
+% *** Do not touch the following lines. BEGIN. ***
+\title{Opposition report for degree project\\\vspace{1mm}\small{Version \theVersion}}
+\author{\textsc{\theCourse}}
+\date{\today}  % This will automatically insert the current date
+\begin{document}
+\maketitle
+\vspace*{-5mm}
+% *** END. Do not touch the lines above. ***
+
+% *** PLEASE START HERE ***
+\noindent % Do not delete this line or add an empty line below.
+\begin{tabular}{|l|l|p{10cm}|}
+\hline
+\multirow{3}{*}{Opponent}
+ & Name                  & Your full name as given in LADOK  \\\cline{2-3}
+ & e-Mail                & ...@student.bth.se \\\cline{2-3}
+ & Social security nr    & YYMMDDXXXX \\\hline
+\multirow{2}{*}{Thesis}
+ & Title                 &  \\\cline{2-3}
+ & Author(s)             &  \\\hline  
+\end{tabular}
+
+\todo[inline]{This structure is just a suggestion. Please adapt it as you see fit. A typical opposition should be 2000--3000 words in size (5--8 pages in 12pt font with single line spacing).
+
+Make sure to be as specific as possible in your review and change requests and describe clearly what should/might be improved; where, why and how.
+
+Don't forget to comment out the blue boxes before you submit your review.}
+
+\section{Introduction}
+\todo[inline]{This section should provide the following: (a) a brief overview over the reviewed work,
+(b) resources you used for your review, if applicable (e.g., reviewing guidelines), and (c) a brief summary of the main strength and weaknesses of the reviewed work.}
+
+
+\section{Critical review}
+\todo[inline]{In this section, you provide more details about the strengths and weaknesses. It typically works well, if the order follows the structure of the reviewed work, but any other structure that you seem fit is fine. If you include suggestions for change here, make sure to also list them in Section \textit{Required changes} or \textit{Recommended changes}. \textbf{Important:} When critiquing results, analysis and discussion, do not focus only on methodological issues (these should have been mentioned already in the critique of the research methodology), but pay attention to the actual results and whether they have been discussed in relation to existing knowledge. Support your arguments with references to the literature.}
+
+
+\section{Required changes}
+\todo[inline]{In this section, you should list all changes that you think are necessary before publication.
+Please make sure the following: (a) the places for changes are easy to find, (b) there is a motivation for the change (if it is not obvious), and (c) you give suggestions for improvement (if it is not obvious how the problem can be resolved). \textbf{Important:} If your critical review raises an important issue, do not forget to mention it here and possibly provide suggestions on how to address the issue.}
+
+
+\section{Recommended changes}
+\todo[inline]{In this section, you can list further change requests that are less critical than the ones in Section \textit{Required changes}.}
+
+
+% All references are stored in a separate bib-file: thesis-refs.bib
+\bibliography{thesis-refs}
+\bibliographystyle{IEEEtranS}
+\todo[inline]{You can skip this section (including the header), if you do not have any references. If so, just uncomment the commands \textbackslash bibliography and \textbackslash bibliographystyle.}
+
+\end{document}
